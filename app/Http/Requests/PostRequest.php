@@ -11,13 +11,7 @@ class PostRequest extends FormRequest
      *
      * @return bool
      */
-    public function messages()
-    {
-        return[
-            'title.required' => 'タイトルを入力してください。',
-            'body.required' => 'メッセージを入力してください。',
-        ];
-    }
+    
     public function rules()
     {
         return [
@@ -26,7 +20,8 @@ class PostRequest extends FormRequest
              
         ];
     }
-
+    
+   
     /**
      * Get the validation rules that apply to the request.
      *
