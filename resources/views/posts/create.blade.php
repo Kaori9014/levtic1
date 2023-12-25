@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <title>Blog</title>
+  <x-app-layout>
+      <head>
+           <meta charset="utf-8">
+           <title>Blog</title>
         
-   </head>
+      </head>
     <body>
         <h1>Blog Name<h1>
         <form action="/posts" method="POST">
@@ -35,4 +36,5 @@
         </div>
        
     </body>
+  </x-app-layout>
 </html>

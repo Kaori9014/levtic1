@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <x-app-layout>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,4 +26,5 @@
         </div>
         <div class="edit"><a href="/posts/{{ $post->id}}/edit">edit</a></div>
     </body>
+    </x-app-layout>
 </html>
